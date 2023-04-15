@@ -9,7 +9,7 @@ class Imapctl < Formula
 
   on_macos do
     url "https://github.com/honest-magic/imapctl/releases/download/v0.0.3/imapctl_0.0.3_darwin_all.tar.gz"
-    sha256 "a1775c90050107afc85549159e91149d7a2479b2312a12ce6c397ba8678b8116"
+    sha256 "4f86dfcbe1b4e11f690d4ed736c6f9fa830e54d87b4823fdff95ad8b12329788"
 
     def install
       bin.install "imapctl"
@@ -19,7 +19,7 @@ class Imapctl < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/honest-magic/imapctl/releases/download/v0.0.3/imapctl_0.0.3_linux_arm64.tar.gz"
-      sha256 "a47a0e3c3fe2394e76dc5f03b92320b82cc182717bc95de4ab466a2ca1fd3db2"
+      sha256 "59c015f545c1ed50196374e55646fddd70f6a6681bf4720e8c5f1e700b1fa21c"
 
       def install
         bin.install "imapctl"
@@ -27,7 +27,7 @@ class Imapctl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/honest-magic/imapctl/releases/download/v0.0.3/imapctl_0.0.3_linux_amd64.tar.gz"
-      sha256 "d8733869ab71620e18858065312d1ee56cd7336712c1fee753bc15df77a957cc"
+      sha256 "4d4b33784a88c7360ca0dbf715e155c13473a170bfc8d903d82dc3c6cf377a80"
 
       def install
         bin.install "imapctl"
