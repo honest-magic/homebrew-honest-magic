@@ -5,11 +5,11 @@
 class Imapctl < Formula
   desc ""
   homepage "https://github.com/honest-magic/imapctl"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/honest-magic/imapctl/releases/download/v0.0.2/imapctl_0.0.2_darwin_all.tar.gz"
-    sha256 "89c362f40109cc2f79e699e5790a3a68720c0aa7f2e8287ffb5b410789aaa9a0"
+    url "https://github.com/honest-magic/imapctl/releases/download/v0.0.3/imapctl_0.0.3_darwin_all.tar.gz"
+    sha256 "a1775c90050107afc85549159e91149d7a2479b2312a12ce6c397ba8678b8116"
 
     def install
       bin.install "imapctl"
@@ -18,16 +18,16 @@ class Imapctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honest-magic/imapctl/releases/download/v0.0.2/imapctl_0.0.2_linux_arm64.tar.gz"
-      sha256 "2efc04203eb40e9bc5d72628af2885e0aeb3b4bf29e55480c65e7d49a8464a66"
+      url "https://github.com/honest-magic/imapctl/releases/download/v0.0.3/imapctl_0.0.3_linux_arm64.tar.gz"
+      sha256 "a47a0e3c3fe2394e76dc5f03b92320b82cc182717bc95de4ab466a2ca1fd3db2"
 
       def install
         bin.install "imapctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/honest-magic/imapctl/releases/download/v0.0.2/imapctl_0.0.2_linux_amd64.tar.gz"
-      sha256 "6e4835868cdec22ee755209a83058232f9c98c719cd6aa6e46e122e7c4c552db"
+      url "https://github.com/honest-magic/imapctl/releases/download/v0.0.3/imapctl_0.0.3_linux_amd64.tar.gz"
+      sha256 "d8733869ab71620e18858065312d1ee56cd7336712c1fee753bc15df77a957cc"
 
       def install
         bin.install "imapctl"
